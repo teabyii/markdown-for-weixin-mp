@@ -1,0 +1,3 @@
+# markdown-for-weixin-mp
+
+The chrome extension to help you use markdown to write artiles in mp.weixin.qq.com ...

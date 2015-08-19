@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "markdown-for-weixin-mp",
+  "description": "The chrome extension to help you use markdown to write artiles in mp.weixin.qq.com ...",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+		"default_title": "Markdown Here"
+  },
+  "permissions": [
+		"activeTab"
+	],
+	"background": {
+    "page": "page/background.html"
+	},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*",
+        "file:///*/*"
+      ],
+      "js": [
+        "scripts/content.js"
+      ]
+    }
+  ]
+}

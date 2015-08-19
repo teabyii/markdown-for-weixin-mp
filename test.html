@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试</title>
+</head>
+<body>
+  <textarea id="edit" style="width:800px;height:500px;"></textarea>
+  <div id="show" style="width:700px;margin-top:50px"></div>
+  <script>
+    var show = document.getElementById('show')
+    var edit = document.getElementById('edit')
+    edit.addEventListener('blur', function () {
+      show.innerHTML = edit.value
+    }, false)
+  </script>
+</body>
+</html>
